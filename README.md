@@ -25,10 +25,12 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-## Purpose of the Game: 
+**Purpose of the Game**
+
 The game is a streamlit based number guessing game where players select a difficulty level (easy, medium, hard) to guess a number within a range. The game also provides hints ("Too High" or "Too Low"), tracks attempts and returns a score. 
 
-Bugs and Resolution:
+**Bugs and Resolution**
+
 Bug 1: The secret number reset randomly on every "Submit" click due to missing session state, making it impossible to win.
 Resolution 1: The secret number issue was resolved by initializing the secret number once per game.
 
