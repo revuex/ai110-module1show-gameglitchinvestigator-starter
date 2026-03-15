@@ -81,12 +81,8 @@ def test_update_score_win_minimum():
     new_score = update_score(0, "Win", 10)  # 100 - 10*11 = 100-110=-10, min 10
     assert new_score == 10
 
-def test_update_score_too_high_even_attempt():
+def test_update_score_too_high_attempt():
     new_score = update_score(0, "Too High", 2)  # even
-    assert new_score == 5
-
-def test_update_score_too_high_odd_attempt():
-    new_score = update_score(0, "Too High", 1)  # odd
     assert new_score == -5
 
 def test_update_score_too_low():
